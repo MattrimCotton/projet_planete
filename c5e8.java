@@ -20,15 +20,17 @@ public class c5e8 {
     }
 
     public static boolean EnterGame(String _name) {
-        System.out.println("Bienvenu " + _name + "présentation du jeu \nVoulez-vous jouer ?\nEntrer [o] pour jouer, sinon appuyer sur n'importe quelle touche pour sortir du jeu");
+        System.out.println("Bienvenu " + _name
+                + "présentation du jeu \nVoulez-vous jouer ?\nEntrer [o] pour jouer, sinon appuyer sur n'importe quelle touche pour sortir du jeu");
         if (input.nextLine().equals("o")) {
             System.out.println("C'est parti.");
             return true;
-        } else  {
+        } else {
             System.out.println("Au revoir.");
             return false;
         }
     }
+
     public static int ChoiceRandom(int _nbr1, int _nbr2) {
         int random = (int) (Math.random() * (_nbr2 - _nbr1) + _nbr1);
         return random;
@@ -45,8 +47,12 @@ Planete();
  erreur++;           
         } while (qestionNumber!=5);
     }
+
     public void Question(int random) {
-        
+        String [ChoiceRandom(0, questions.length ) ] questions={"question1","question2","question3"};
+        System.out.println(questions[0]);
+        System.out.println(questions.length);
+
     }
 
 }
